@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:sliderAnimationDuration="600"
-        android:layout_marginBottom="100dp"
         app:sliderAutoCycleDirection="back_and_forth"
         app:sliderIndicatorAnimationDuration="600"
         app:sliderIndicatorEnabled="true"
@@ -20,10 +19,21 @@
         app:sliderIndicatorMargin="15dp"
         app:sliderIndicatorOrientation="horizontal"
         app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorMarginBottom="100dp"
         app:sliderIndicatorRadius="2dp"
         app:sliderIndicatorSelectedColor="#FFFFFF"
         app:sliderIndicatorUnselectedColor="#808080"
         app:sliderScrollTimeInSec="1" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginBottom="240dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/editext_shape"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"/>
 
 
     <Button

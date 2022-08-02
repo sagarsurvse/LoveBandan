@@ -4,7 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.app.lovebandhan.Models.SliderAdapter;
+import com.app.lovebandhan.Adapaters.SliderAdapter;
+import com.app.lovebandhan.Models.SliderData;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;

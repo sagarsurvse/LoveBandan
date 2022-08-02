@@ -1,4 +1,4 @@
-package com.app.lovebandhan;
+package com.app.lovebandhan.Models;
 
 public class SliderData {
     private String imgUrl;

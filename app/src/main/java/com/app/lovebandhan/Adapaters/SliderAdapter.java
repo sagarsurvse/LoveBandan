@@ -1,12 +1,12 @@
-package com.app.lovebandhan.Models;
+package com.app.lovebandhan.Adapaters;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.app.lovebandhan.Models.SliderData;
 import com.app.lovebandhan.R;
-import com.app.lovebandhan.SliderData;
 import com.bumptech.glide.Glide;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
