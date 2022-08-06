@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:node="replace">
-        <activity android:name=".Screen.FormStep.FormStepOne"></activity>
+        <activity android:name=".Screen.FormStep.FormStepTwo"></activity>
+        <activity android:name=".Screen.FormStep.FormStepOne" />
         <activity android:name=".Screen.VerifyScreen" />
         <activity android:name=".MainActivity">
             <intent-filter>
