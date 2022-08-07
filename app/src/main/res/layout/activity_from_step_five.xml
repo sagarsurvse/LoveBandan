@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Screen.FormStep.FromStepFive">
-
+    android:layout_height="match_parent">
+<!--
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,14 +19,6 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profilePic"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                android:layout_gravity="bottom|center_horizontal"
-
-                android:background="@drawable/shape"
-                 />
 
         </FrameLayout>
 
@@ -156,5 +147,5 @@
 
         </RelativeLayout>
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 </RelativeLayout>

@@ -120,7 +120,7 @@
             tools:ignore="UselessParent">
 
             <Spinner
-                android:id="@+id/spinner1"
+                android:id="@+id/spinner_profile_for"
                 android:layout_width="match_parent"
                 android:backgroundTint="#ff0000"
                 android:overlapAnchor="false"
@@ -233,6 +233,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
         android:text="Continue"
+        android:id="@+id/id_continue"
         android:paddingRight="20dp"
         android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
         android:layout_alignParentBottom="true"
