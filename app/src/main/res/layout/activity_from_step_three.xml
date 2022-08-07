@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_centerHorizontal="true"
+
+        android:layout_marginVertical="50dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Thanks for Registering.now let's build your profile"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <TextView
+            android:id="@+id/live"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+
+            android:layout_below="@+id/profile1"
+            android:layout_marginLeft="24dp"
+            android:text="You live in*"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+
+            tools:ignore="NotSibling,UnknownId" />
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/live"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_sshape"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/state"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        tools:ignore="UselessParent"
+        >
+
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#ff0000"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/material"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_below="@+id/state"
+        android:layout_marginLeft="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Your material stutus*"
+        android:textSize="16sp"
+
+
+        />
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/state"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/spinner_sshape"
+        android:layout_width="match_parent"
+        android:id="@id/material"
+        android:layout_height="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        tools:ignore="UselessParent">
+
+        <Spinner
+            android:id="@+id/spinner6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#ff0000"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@+id/material"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+       android:layout_marginTop="10dp"
+        android:text="Your diet*"
+        android:textStyle="bold"
+        android:layout_marginLeft="24dp"
+        android:textSize="16sp"
+
+
+        />
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/material"
+        android:layout_marginTop="35dp"
+
+        android:id="@+id/diet"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/spinner_sshape"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="UselessParent">
+
+        <Spinner
+            android:id="@+id/spinner7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#ff0000"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown" />
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_below="@+id/diet"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Your height"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+
+            />
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/diet"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/spinner_sshape"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/height"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        tools:ignore="UselessParent">
+
+        <Spinner
+            android:id="@+id/spinner8"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#ff0000"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown" />
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_below="@+id/height"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Your sub-community"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+
+            />
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/height"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/spinner_sshape"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:id="@+id/community"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        tools:ignore="UselessParent">
+
+        <Spinner
+            android:id="@+id/spinner9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#ff0000"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown" />
+
+    </RelativeLayout>
+
+        <CheckBox
+            android:layout_below="@id/community"
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+           android:textSize="16sp"
+            android:text="Not particular about my partner's community"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="24dp"
+
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_shape"
+        android:paddingRight="20dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"></Button>
+
+
+
+
+
+
+
+
+</RelativeLayout>

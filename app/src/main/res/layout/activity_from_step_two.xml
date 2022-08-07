@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/step_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/id1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/cicle_green_shape"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="80dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id1"
+            android:background="#008000"></View>
+
+        <TextView
+            android:id="@+id/id2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view1"
+            android:background="@drawable/cicle_green_shape"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="80dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id2"
+            android:background="#50808080"></View>
+
+        <TextView
+            android:id="@+id/id3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view2"
+            android:background="@drawable/cicle_green_shape"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="80dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id3"
+            android:background="#50808080"></View>
+
+        <TextView
+            android:id="@+id/id4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view3"
+            android:background="@drawable/cicle_green_shape"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/step_status"
+        android:layout_marginVertical="30dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Great Now some basic details about you"
+            android:textColor="#000000"
+            android:textSize="19dp"
+
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_id"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            android:hint="Email_id"
+            android:paddingLeft="20dp" />
+
+
+        <LinearLayout
+            android:id="@+id/country_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/email_id"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            tools:ignore="UselessParent">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autofillHints="phone"
+                android:backgroundTint="#ff0000"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/country_code"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            android:hint="Mobile no"
+            android:paddingLeft="20dp" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/birth_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/phone_no"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            android:hint="Date of birth"
+            android:paddingHorizontal="20dp" />
+
+        <LinearLayout
+            android:id="@+id/living"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/birth_date"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            tools:ignore="UselessParent">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#ff0000"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn_shape"
+        android:paddingRight="20dp"
+        android:text="Create Account"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="24dp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+
+
+
+
+
+</RelativeLayout>

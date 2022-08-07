@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="Education &amp; caarrier details"
+        android:textSize="25dp"
+
+        android:textStyle="bold"
+
+
+        >
+
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/qulification"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+
+            android:layout_marginLeft="24dp"
+            android:text="Your highest qulification*"
+            android:textSize="17sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/qulificatio1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/qulification"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            tools:ignore="UselessParent">
+
+            <Spinner
+                android:id="@+id/spinner10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#ff0000"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/work"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_below="@+id/qulificatio1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:text="You work with"
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <RelativeLayout
+            android:id="@id/work1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/work"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            tools:ignore="UselessParent">
+
+            <Spinner
+                android:id="@+id/spinner11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#ff0000"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/as"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_below="@+id/work1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:text="As"
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <RelativeLayout
+            android:id="@id/as1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/as"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            tools:ignore="UselessParent">
+
+            <Spinner
+                android:id="@+id/spinner12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#ff0000"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_below="@+id/as1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Your height"
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/income1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/income"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            tools:ignore="UselessParent">
+
+            <Spinner
+                android:id="@+id/spinner8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#ff0000"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_below="@+id/income1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:text="Your sub-community"
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="24dp"
+
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/btn_shape"
+        android:paddingRight="20dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"></Button>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
