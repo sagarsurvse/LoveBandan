@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/home_icon"
+        android:id="@+id/home"/>
+
+
+    <item
+        android:title="Matches"
+        android:icon="@drawable/ic_baseline_supervisor_account_24"
+        android:id="@+id/matches"/>
+
+    <item
+        android:title="Chat"
+        android:icon="@drawable/ic_baseline_chat_bubble_outline_24"
+        android:id="@+id/chat"/>
+
+
+    <item
+        android:title="Premium"
+        android:icon="@drawable/primium"
+        android:id="@+id/primium"/>
+
+</menu>
