@@ -135,7 +135,7 @@
             tools:ignore="UselessParent">
 
             <Spinner
-                android:id="@+id/spinner10"
+                android:id="@+id/spinner_higher"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:backgroundTint="#ff0000"
@@ -170,7 +170,7 @@
             tools:ignore="UselessParent">
 
             <Spinner
-                android:id="@+id/spinner11"
+                android:id="@+id/spinner_work"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:backgroundTint="#ff0000"
@@ -206,7 +206,7 @@
             tools:ignore="UselessParent">
 
             <Spinner
-                android:id="@+id/spinner12"
+                android:id="@+id/spinner_as"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:backgroundTint="#ff0000"
@@ -223,12 +223,9 @@
             android:layout_below="@+id/as1"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="10dp"
-            android:text="Your height"
+            android:text="Your annual income"
             android:textSize="17sp"
-            android:textStyle="bold"
-
-
-            />
+            android:textStyle="bold" />
 
         <RelativeLayout
             android:id="@+id/income1"
@@ -242,7 +239,7 @@
             tools:ignore="UselessParent">
 
             <Spinner
-                android:id="@+id/spinner8"
+                android:id="@+id/spinner_income"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:backgroundTint="#ff0000"
@@ -250,19 +247,6 @@
                 android:spinnerMode="dropdown" />
 
         </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="19dp"
-            android:layout_below="@+id/income1"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="10dp"
-            android:text="Your sub-community"
-            android:textSize="17sp"
-            android:textStyle="bold"
-
-
-            />
 
 
     </RelativeLayout>
@@ -274,8 +258,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="100dp"
+        android:id="@+id/final_Btn"
         android:layout_marginRight="24dp"
-
         android:layout_marginBottom="45dp"
         android:background="@drawable/btn_shape"
         android:paddingRight="20dp"

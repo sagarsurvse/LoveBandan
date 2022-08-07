@@ -15,6 +15,8 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:node="replace">
         <activity android:name=".Screen.FormStep.FormStepTwo"></activity>
+        <activity android:name=".Screen.FormStep.FormStepThree"/>
+        <activity android:name=".Screen.FormStep.FormStepFour"/>
         <activity android:name=".Screen.VerifyScreen" />
         <activity android:name=".Screen.FormStep.FormStepOne">
             <intent-filter>
@@ -23,6 +25,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
     </application>
 
 </manifest>

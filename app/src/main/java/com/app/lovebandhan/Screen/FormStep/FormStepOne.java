@@ -2,6 +2,7 @@ package com.app.lovebandhan.Screen.FormStep;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -69,6 +70,15 @@ public class FormStepOne extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d(TAG,"Fname: "+Fname.getText().toString()+" Lname: "+Lname.getText().toString()+" SpinProfile "+SpinProfile.getSelectedItem().toString()
                 +" SpinGender: "+SpinGender.getSelectedItem().toString()+" SpinReligion : "+SpinReligion.getSelectedItem().toString()+ " SpinCommunity: "+SpinCommunity.getSelectedItem().toString());
+
+                Intent pass = new Intent(getApplicationContext(),FormStepTwo.class);
+                pass.putExtra("fname",Fname.getText().toString());
+                pass.putExtra("lname",Lname.getText().toString());
+                pass.putExtra("profile",SpinProfile.getSelectedItem().toString());
+                pass.putExtra("religion",SpinReligion.getSelectedItem().toString());
+                pass.putExtra("gender",SpinGender.getSelectedItem().toString());
+                pass.putExtra("community",SpinCommunity.getSelectedItem().toString());
+                startActivity(pass);
             }
         });
 
