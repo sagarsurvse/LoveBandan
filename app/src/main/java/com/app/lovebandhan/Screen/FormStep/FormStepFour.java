@@ -2,6 +2,7 @@ package com.app.lovebandhan.Screen.FormStep;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.app.lovebandhan.R;
+import com.app.lovebandhan.Screen.HomeScreen;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.FirebaseApp;
@@ -130,9 +132,15 @@ public class FormStepFour extends AppCompatActivity {
                             Log.d(TAG, "onSuccess: order is created ");
                             progressDialog.dismiss();
 
-                           /* Intent i = new Intent(RegisterActivity.this, CustomerLogin.class);
+
+                            SharedPreferences.Editor editor = getSharedPreferences("loginUser", MODE_PRIVATE).edit();
+                            editor.putString("id", strmobile_no);
+                            editor.putBoolean("isLogged", true);
+                            editor.apply();
+
+                            Intent i = new Intent(FormStepFour.this, HomeScreen.class);
                             startActivity(i);
-                            finish();*/
+                            finish();
 
                         }
                     }).addOnFailureListener(new OnFailureListener() {

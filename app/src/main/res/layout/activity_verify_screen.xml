@@ -61,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_marginRight="24dp"
                 android:layout_marginLeft="24dp"
+                android:id="@+id/otp_editext"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/editext_shape"
                 android:layout_height="50dp"/>
@@ -70,6 +71,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="20dp"
                 android:text="Continue"
+                android:id="@+id/id_continue"
                 android:textColor="#ffffff"
                 android:textAllCaps="false"
                 android:background="@drawable/btn_shape"
