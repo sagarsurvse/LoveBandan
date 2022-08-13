@@ -25,10 +25,14 @@ public class FormStepOne extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapterSpinCommunity;
 
 
-    String[] profileArray = {"brother", "sister","self"};
-    String[] genderarray = {"male", "female"};
-    String[] religinArray = {"hindu", "budist","muslim","critin","none"};
-    String[] commityarray = {"test1", "test2","test3","test4"};
+
+    String[] profileArray = {"Self", "Son","Daughter","Brother", "Sister", "Friend", "Relative"};
+    String[] genderarray = {"Male", "Female"};
+    String[] religinArray = {"Hindu", "Christian","Muslim","Jain","Sikh", "Buddist", "Parsi", "Jewish","Other"};
+    String[] commityarray = {"Hindi", "Marathi","Panjabi","Gujrati", "Urdu","Telugu","Kannada","Tamil","Odia","Marwari","Aka","Arabic","Arunachali","Assamese","Awadhi","Baluchi","Bhojpuri",
+                             "Bhutia","Brahui","Chattisgaehi","Chinese","Coorgi","Dorgi","French","Garhwali","Garo","Haryanvi","Himachali/Pahari","Hindko","Kakbarak","Kanauji","Kashmiri",
+                             "Khandesi","Khasi","Konkani","Koshali","Kumaoni","Kutchi","Ladakhi","Lepcha","Magahi","Maithili","Malay","Malayalam","Manipuri","Miji",
+                             "Mizo","Monpa","Nepali","Pashto","Persian","Rajasthani","Russsian","Sanskrit","Santhsli","Seraiki","Sindhi","Sinhala","Sourashtra","Other"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

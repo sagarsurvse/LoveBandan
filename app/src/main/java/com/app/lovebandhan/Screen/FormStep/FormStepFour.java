@@ -36,10 +36,17 @@ public class FormStepFour extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapterSpinAs;
     ArrayAdapter<CharSequence> adapterSpinIncome;
 
-    String[] schoolArray = {"bsc", "be","bcom"};
-    String[] workarray = {"softwaare developer", "m.enginner","clerk","dilevery boy"};
-    String[] AsArray = {"zomato", "swigy","google","amazon","jio"};
-    String[] Incomearray = {"1.5 cr", "2 cr","10000","100000000"};
+    String[] schoolArray = {"ENGIEERING", "B.E/B.Tech","M.E/M.Tech","M.S Engineering","B.Eng(Hons)","M.Eng(Hons)","Engineering Diploma","AE","AET","-ARTS/DESIGN-","B.A","B.ED","BJMS","BFA","B.Arch",
+                             "B.Des","BMM","MFA","M.ED","M.A","MSW","MJMS","M.Arch","M.Des","BA(Hons)","B.Arch(Hons)","DFA","D.ED","D.Arch","AA","AFA","-FINANCE/COMMERCE-","B.Com",
+                             "CA/CPA","CPA","CFA","CS","BSc/BFin","M.Com","MSc/MFin/MS","BCom(Hons)","PGD Finance","-COMPUTER/IT-","BCA","B.IT","BCS","BA Computer Science","MCA","PGDCA","IT Diploma","ADIT","-SCIENCE-","B.Sc",
+                             "BSc/(Hons)","DipSc","AS","AAS","-MEDICINE","MBBS","BDS","BPT","BAMS","BHMS","B.Pharma","BVSc","BSN/BScN","MDS","MCH","M.D","M.S Medicine","MPT","DM","M.Pharma","MVSC","MMed","PGD Medicine","ADN", "-MANAGEMENT-","BBA","BHM","BBM",
+                              "MBA","PGDM","ABA","ADBus","-LAW-","BL/LLB","ML/LLM","LLB(Hons)","ALA","-DOCTORATE","Ph.D","M.Phil","-OTHERS","Bachelor","Master","Diploma","Honours","Doctorate","Associte",
+                               "-NON-GRADUATE-","High school","Less than high school"};
+    String[] workarray = {"Private Company", "Government/Public Sector","Defence/Civil Services","Business/Self Employmed","Not Working"};
+    String[] AsArray = {"ACCOUNTING,BANKING & FINANCE", "Banking Professional","Chartered Accountant","Company Secretary","Finance Professional","Accounting Professional(Others)","ADMINISTRATION &HR","Admin Professional","Human Resource Professional","ADVERTISING,MEDIA & ENTERTENMENT","Actor","Advertising Professional","Entertainment Professional","Event Manager","Journalist","Media Professional","Publilc Relations Professional","Framing","Horticulturist","Agricultural Professional (Others)","AIRLINE & AVIATION","Air Hostess/Fight Attendant","Pilot/Co-Pilot","Other Airline Professional",
+                         "AERCHITECTURE & DESIGN","Architect","Interior Designer","Landscape Architect","ARTISTS,ANIMATORS & WEB DESIGNERS","Animator","Commercial Aertist","Web/UX Desingners","BEAUTY,FASHION & JEWELLARY DESIGNERS","Beautician","Fashion Desinger","Hair"};
+    String[] Incomearray = {"Upto INR 1 Lakh", "INR 1 LAKH TO 2 Lakh","INR 2 LAKH TO 4 Lakh","INR 4 LAKH TO 7 Lakh","INR 7 LAKH TO 10 Lakh","INR 10 LAKH TO 15 Lakh","INR 15 LAKH TO 20 Lakh","INR 20 LAKH TO 30 Lakh","INR 30 LAKH TO 50 Lakh",
+                             "INR 50 LAKH TO 15 Lakh","INR 75 LAKH TO 1 Coror","INR 1 Coror & above"};
 
 
     FirebaseFirestore fstore;

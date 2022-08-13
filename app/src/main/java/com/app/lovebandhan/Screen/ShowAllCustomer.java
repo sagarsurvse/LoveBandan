@@ -76,7 +76,7 @@ public class ShowAllCustomer extends AppCompatActivity {
 
         FirebaseApp.initializeApp(this);
         db = FirebaseFirestore.getInstance();
-        query = db.collection("Users").whereEqualTo("Gender","male");
+        query = db.collection("Users").whereEqualTo("Gender","Male");
         response = new FirestoreRecyclerOptions.Builder<UserModel>()
                 .setQuery(query, UserModel.class)
                 .build();
@@ -143,7 +143,7 @@ public class ShowAllCustomer extends AppCompatActivity {
                 progressBar.setVisibility(View.GONE);
 
                 Boolean isCheck = false;
-                holder.textName.setText(model.getMobile_Number());
+                holder.textName.setText(model.getFirst_Name()+" "+model.getLast_Name());
 
                 if (ChatList != null){
                     for (int i = 0; i<ChatList.size();i++){
@@ -221,6 +221,7 @@ public class ShowAllCustomer extends AppCompatActivity {
                         });
                     }
                 });
+
 
                 Glide
                         .with(getApplicationContext())
