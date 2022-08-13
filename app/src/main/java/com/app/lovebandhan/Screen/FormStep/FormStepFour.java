@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.app.lovebandhan.R;
 import com.app.lovebandhan.Screen.HomeScreen;
+import com.app.lovebandhan.Screen.ShowAllCustomer;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.FirebaseApp;
@@ -138,7 +139,7 @@ public class FormStepFour extends AppCompatActivity {
                             editor.putBoolean("isLogged", true);
                             editor.apply();
 
-                            Intent i = new Intent(FormStepFour.this, HomeScreen.class);
+                            Intent i = new Intent(FormStepFour.this, ShowAllCustomer.class);
                             startActivity(i);
                             finish();
 

@@ -19,9 +19,13 @@
         <activity android:name=".Screen.FormStep.FormStepThree" />
         <activity android:name=".Screen.FormStep.FormStepFour" />
         <activity android:name=".Screen.VerifyScreen" />
+        <activity android:name=".Screen.ChatScreen.Main_Chat_Activity"/>
         <activity android:name=".Screen.FormStep.FormStepOne"/>
         <activity android:name="com.google.firebase.auth.internal.RecaptchaActivity"
             android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:name=".Screen.Followers"/>
+        <activity android:name=".Screen.Following"/>
+        <activity android:name=".Screen.ShowAllCustomer"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
