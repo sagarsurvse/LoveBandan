@@ -145,7 +145,7 @@ public class Main_Chat_Activity extends AppCompatActivity {
                            for (QueryDocumentSnapshot document : task.getResult()) {
                                if (isLoggedID.equals((String) document.getData().get("patientID"))){
                                    ChatModel chatModel = new ChatModel();
-                                   chatModel.setCurrent(false);
+                                   chatModel.setCurrent(true);
                                    chatModel.setText((String) document.getData().get("text"));
                                    chatModel.setImageurl((String) document.getData().get("imageurl"));
                                    chatModel.setDocumentID(document.getId());
@@ -156,8 +156,9 @@ public class Main_Chat_Activity extends AppCompatActivity {
                                    Log.d(TAG,"pID: "+(String) document.getData().get("text"));
                                }
                                else {
+
                                    ChatModel chatModel = new ChatModel();
-                                   chatModel.setCurrent(true);
+                                   chatModel.setCurrent(false);
                                    chatModel.setText((String) document.getData().get("text"));
                                    chatModel.setImageurl((String) document.getData().get("imageurl"));
                                    chatModel.setDocumentID(document.getId());
@@ -166,6 +167,8 @@ public class Main_Chat_Activity extends AppCompatActivity {
                                    chatModelList.add(chatModel);
                                    timestamp = (Timestamp) document.getData().get("time");
                                    Log.d(TAG,"pID: "+(String) document.getData().get("text"));
+
+
                                }
 
 
