@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/r_v"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_radius"
+    android:layout_marginTop="24dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/tob_bar">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/profile_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_height="400dp"/>
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sagar Survase"
+            android:paddingLeft="20dp"
+            android:background="#90111827"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="27 year marathi ,
+         96 kuli ,maratha,
+        ahmednagar, maharatra"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tob_bar"
+        android:gravity="center_vertical"
+        android:textColor="#90111827"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_border"
+        android:layout_below="@+id/Age"
+        android:layout_marginTop="24dp"
+        android:id="@+id/connect"
+        android:visibility="gone"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Connect Now"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/app_color"
+            android:textAllCaps="false"
+            android:id="@+id/btn_continue"
+            android:layout_height="60dp"></TextView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/ic_check"
+            android:layout_height="40dp">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_border"
+        android:layout_below="@+id/Age"
+        android:layout_marginTop="24dp"
+        android:id="@+id/sendMessage"
+        android:visibility="gone"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Send Message"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/app_color"
+            android:textAllCaps="false"
+            android:layout_height="60dp"></TextView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
