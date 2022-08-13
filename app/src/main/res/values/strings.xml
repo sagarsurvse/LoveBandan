@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LoveBandhan</string>
+    <string name="already_have_an_account">Already have an account? <font color='#01C6DB'>Login</font></string>
 </resources>

@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     String url1 ="https://firebasestorage.googleapis.com/v0/b/lovebandhan-a7b98.appspot.com/o/WhatsApp%20Image%202022-08-07%20at%2011.17.48%20PM.jpeg?alt=media&token=74eddbc9-09dc-4672-8c50-22eb16670f16";
     String url2 = "https://firebasestorage.googleapis.com/v0/b/lovebandhan-a7b98.appspot.com/o/WhatsApp%20Image%202022-08-08%20at%204.00.32%20PM.jpeg?alt=media&token=a1327d0f-98fc-46bd-b00c-e424ffa7470a";
     String url3 = "https://firebasestorage.googleapis.com/v0/b/lovebandhan-a7b98.appspot.com/o/WhatsApp%20Image%202022-08-08%20at%204.00.33%20PM%20(1).jpeg?alt=media&token=f0b6e192-0c93-4c92-8e4b-c66944d26ab1";
-    EditText ed_phone;
     Button Btn_Continue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        ed_phone = findViewById(R.id.ed_phone_number);
         Btn_Continue = findViewById(R.id.btn_continue);
 
 
@@ -83,16 +81,8 @@ public class MainActivity extends AppCompatActivity {
         Btn_Continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 if (ed_phone.getText() != null ){
-                     if (ed_phone.getText().length() > 9){
-                         Intent i = new Intent(getApplicationContext(), FormStepOne.class);
-                         i.putExtra("phone_no",ed_phone.getText().toString());
-                         startActivity(i);
-                     }
-                 }
-
-              /*  Intent i = new Intent(getApplicationContext(), FormStepOne.class);
-                startActivity(i);*/
+                Intent i = new Intent(getApplicationContext(), FormStepOne.class);
+                startActivity(i);
             }
         });
 
