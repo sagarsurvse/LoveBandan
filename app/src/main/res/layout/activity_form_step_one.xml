@@ -131,29 +131,29 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginTop="24dp"
-            android:paddingLeft="20dp"
             android:id="@+id/f_name"
-            android:layout_below="@+id/profile_id"
-            android:background="@drawable/spinner_sshape"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="First Name" />
+            android:layout_below="@+id/profile_id"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            android:hint="First Name"
+            android:paddingLeft="20dp" />
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginTop="24dp"
-            android:paddingLeft="20dp"
             android:id="@+id/l_name"
-            android:layout_below="@+id/f_name"
-            android:background="@drawable/spinner_sshape"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Last Name" />
+            android:layout_below="@+id/f_name"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/spinner_sshape"
+            android:hint="Last Name"
+            android:paddingLeft="20dp" />
 
 
         <LinearLayout
