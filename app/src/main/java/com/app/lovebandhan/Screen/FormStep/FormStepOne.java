@@ -70,19 +70,26 @@ public class FormStepOne extends AppCompatActivity {
 
 
         Btn_continue.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+                if (!Fname.getText().toString().isEmpty() || !Lname.getText().toString().isEmpty() ){
+                    Intent pass = new Intent(getApplicationContext(),FormStepTwo.class);
+                    pass.putExtra("fname",Fname.getText().toString());
+                    pass.putExtra("lname",Lname.getText().toString());
+                    pass.putExtra("profile",SpinProfile.getSelectedItem().toString());
+                    pass.putExtra("religion",SpinReligion.getSelectedItem().toString());
+                    pass.putExtra("gender",SpinGender.getSelectedItem().toString());
+                    pass.putExtra("community",SpinCommunity.getSelectedItem().toString());
+                    startActivity(pass);
+                }
+                else {
+                    Fname.setError("please enter the name");
+                }
                 Log.d(TAG,"Fname: "+Fname.getText().toString()+" Lname: "+Lname.getText().toString()+" SpinProfile "+SpinProfile.getSelectedItem().toString()
                 +" SpinGender: "+SpinGender.getSelectedItem().toString()+" SpinReligion : "+SpinReligion.getSelectedItem().toString()+ " SpinCommunity: "+SpinCommunity.getSelectedItem().toString());
 
-                Intent pass = new Intent(getApplicationContext(),FormStepTwo.class);
-                pass.putExtra("fname",Fname.getText().toString());
-                pass.putExtra("lname",Lname.getText().toString());
-                pass.putExtra("profile",SpinProfile.getSelectedItem().toString());
-                pass.putExtra("religion",SpinReligion.getSelectedItem().toString());
-                pass.putExtra("gender",SpinGender.getSelectedItem().toString());
-                pass.putExtra("community",SpinCommunity.getSelectedItem().toString());
-                startActivity(pass);
+
             }
         });
 
