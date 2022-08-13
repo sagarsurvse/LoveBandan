@@ -97,7 +97,7 @@ public class Main_Chat_Activity extends AppCompatActivity {
                     return;
                 }
 
-                chatModel = new ChatModel(message.getText().toString(), Timestamp.now(), true, null,"113244testid",u_id);
+                chatModel = new ChatModel(message.getText().toString(), Timestamp.now(), true, null,"113244testid",isLoggedID);
 
                 chatModelList.add(chatModel);
 
