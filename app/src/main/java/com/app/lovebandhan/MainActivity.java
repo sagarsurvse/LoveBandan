@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.app.lovebandhan.Adapaters.SliderAdapter;
 import com.app.lovebandhan.Models.SliderData;
 import com.app.lovebandhan.Screen.FormStep.FormStepOne;
+import com.app.lovebandhan.Screen.LoginScrren.Login;
 import com.app.lovebandhan.Screen.ShowAllCustomer;
 import com.app.lovebandhan.Screen.VerifyScreen;
 import com.smarteist.autoimageslider.SliderView;
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     String url2 = "https://firebasestorage.googleapis.com/v0/b/lovebandhan-a7b98.appspot.com/o/WhatsApp%20Image%202022-08-08%20at%204.00.32%20PM.jpeg?alt=media&token=a1327d0f-98fc-46bd-b00c-e424ffa7470a";
     String url3 = "https://firebasestorage.googleapis.com/v0/b/lovebandhan-a7b98.appspot.com/o/WhatsApp%20Image%202022-08-08%20at%204.00.33%20PM%20(1).jpeg?alt=media&token=f0b6e192-0c93-4c92-8e4b-c66944d26ab1";
     Button Btn_Continue;
+    TextView btLogib;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Btn_Continue = findViewById(R.id.btn_continue);
+        btLogib = findViewById(R.id.bt_alredylogin);
 
 
 
@@ -82,6 +86,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), FormStepOne.class);
+                startActivity(i);
+            }
+        });
+        btLogib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Login.class);
                 startActivity(i);
             }
         });

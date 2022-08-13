@@ -15,6 +15,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:node="replace">
         <activity android:name=".Screen.HomeScreen"></activity>
+        <activity android:name=".Screen.LoginScrren.Login"/>
         <activity android:name=".Screen.FormStep.FormStepTwo" />
         <activity android:name=".Screen.FormStep.FormStepThree" />
         <activity android:name=".Screen.FormStep.FormStepFour" />
