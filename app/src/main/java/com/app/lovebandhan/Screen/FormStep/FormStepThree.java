@@ -1,5 +1,6 @@
 package com.app.lovebandhan.Screen.FormStep;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,11 +14,12 @@ import com.app.lovebandhan.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class FormStepThree extends AppCompatActivity {
-    Spinner SpinLive,SpinMaterial,SpinDiet,SpinHeight,SpinSubCommunity;
+    Spinner SpinLive,SpinCity,SpinMaterial,SpinDiet,SpinHeight,SpinSubCommunity;
     Button Btn_Continue;
 
 
     ArrayAdapter<CharSequence> adapterSpinlive;
+    ArrayAdapter<CharSequence> adapterSpinSelect_city;
     ArrayAdapter<CharSequence> adapterSpinMeterial;
     ArrayAdapter<CharSequence> adapterSpinDiet;
     ArrayAdapter<CharSequence> adapterSpinHeight;
@@ -26,6 +28,10 @@ public class FormStepThree extends AppCompatActivity {
 
     String[] liveArray = {"Aadhra Pradesh","Bihar","dehli-NCR","Gujrat","Haryana","Jharkhand","Kaenataka","Kerala","Madhya Pradesh","Maharastra","Orissa","Punjab","Rajsthan",
                           "Tamil Nadu","Uttar Pradesh","Weat Bengal","Sikkim","Uttaranchal","Tripura"};
+    String[] select_cityArray ={"Ahmednagar","Akola","Amravati","Aurangabad","Beed","Bhandara","Buldhana","Chandrapur","Dhule","Gadchirli",
+                                "Gondiya","Hingoli","Jalgaon","Jalna","Kolhapur","Latur","Malegaon","Mumbai","Nagpur","Nanded","Nandurbar","Nashik",
+                                "Navi Mumbai","Oras","Osmanabad","Parbhani","Pune","Raigad","Ratnagiri","Sangli","Satara","Sewagram","Solapur","Thane",
+                                 "Wardha","Washim","Yavatmal","Other"};
     String[] meterialarray = {"Never Married", "Divorcrd","Windowed","Awaiting Divorce","Annulled"};
     String[] dietArray = {"Veg", "Non-Veg","Occasionally Non-Veg","Eggetarian","Jain","Vegan"};
     String[] heightarray = {"4ft 5in-134cm", "4ft 6in-137","4ft 7in-139cm","4ft 8in-142cm","4ft 9in-144cm","4ft 10in-147cm","4ft 11in-149cm","5ft- 152cm","5ft 1in-154",
@@ -57,6 +63,8 @@ public class FormStepThree extends AppCompatActivity {
 
 
         SpinLive = findViewById(R.id.spinner_live);
+        SpinCity = findViewById(R.id.spinner_city);
+
         SpinMaterial = findViewById(R.id.spinner_materil);
         SpinDiet = findViewById(R.id.spinner_diet);
         SpinHeight = findViewById(R.id.spinner_height);
@@ -67,6 +75,11 @@ public class FormStepThree extends AppCompatActivity {
         adapterSpinlive =    new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item,liveArray);
         adapterSpinlive.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         SpinLive.setAdapter(adapterSpinlive);
+
+        adapterSpinSelect_city =    new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item,select_cityArray);
+        adapterSpinSelect_city.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        SpinCity.setAdapter(adapterSpinSelect_city);
+
 
         //for  gender
         adapterSpinMeterial =    new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item,meterialarray);
@@ -104,6 +117,7 @@ public class FormStepThree extends AppCompatActivity {
                 pass.putExtra("mobile_no",strmobile_no);
                 pass.putExtra("date_of_birth",dateofbirth);
                 pass.putExtra("live",SpinLive.getSelectedItem().toString());
+                pass.putExtra("city",SpinLive.getSelectedItem().toString());
                 pass.putExtra("Meterial",SpinLive.getSelectedItem().toString());
                 pass.putExtra("diet",SpinLive.getSelectedItem().toString());
                 pass.putExtra("height",SpinLive.getSelectedItem().toString());

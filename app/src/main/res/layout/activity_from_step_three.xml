@@ -10,7 +10,7 @@
         android:id="@+id/step_status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="20dp">
 
         <TextView
             android:id="@+id/id1"
@@ -96,7 +96,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@+id/step_status"
         >
 
@@ -156,11 +156,50 @@
     </RelativeLayout>
 
 
+        <TextView
+            android:id="@+id/select_city"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+
+            android:layout_below="@+id/state"
+            android:layout_marginLeft="24dp"
+            android:text="Select city"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+
+            tools:ignore="NotSibling,UnknownId" />
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/select_city"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/spinner_sshape"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/city"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            tools:ignore="UselessParent"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#ff0000"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+
+        </RelativeLayout>
+
+
     <TextView
-        android:id="@+id/material"
+        android:id="@+id/select_material"
         android:layout_width="match_parent"
         android:layout_height="19dp"
-        android:layout_below="@+id/state"
+        android:layout_below="@+id/city"
         android:layout_marginLeft="24dp"
         android:textStyle="bold"
         android:layout_marginTop="10dp"
@@ -173,8 +212,8 @@
 
 
     <RelativeLayout
-        android:layout_below="@+id/state"
-        android:layout_marginTop="35dp"
+        android:layout_below="@+id/select_material"
+        android:layout_marginTop="20dp"
         android:background="@drawable/spinner_sshape"
         android:layout_width="match_parent"
         android:id="@id/material"
