@@ -27,7 +27,7 @@ public class FormStepThree extends AppCompatActivity {
 
 
     String[] liveArray = {"Aadhra Pradesh","Bihar","dehli-NCR","Gujrat","Haryana","Jharkhand","Kaenataka","Kerala","Madhya Pradesh","Maharastra","Orissa","Punjab","Rajsthan",
-                          "Tamil Nadu","Uttar Pradesh","Weat Bengal","Sikkim","Uttaranchal","Tripura"};
+                          "Tamil Nadu","Uttar Pradesh","West Bengal","Sikkim","Uttaranchal","Tripura"};
     String[] select_cityArray ={"Ahmednagar","Akola","Amravati","Aurangabad","Beed","Bhandara","Buldhana","Chandrapur","Dhule","Gadchirli",
                                 "Gondiya","Hingoli","Jalgaon","Jalna","Kolhapur","Latur","Malegaon","Mumbai","Nagpur","Nanded","Nandurbar","Nashik",
                                 "Navi Mumbai","Oras","Osmanabad","Parbhani","Pune","Raigad","Ratnagiri","Sangli","Satara","Sewagram","Solapur","Thane",

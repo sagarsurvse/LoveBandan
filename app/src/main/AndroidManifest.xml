@@ -13,8 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        tools:node="replace">
-        <activity android:name=".Screen.Upload_Profile_Picture"></activity>
+        tools:node="merge">
+        <activity
+            android:name=".PrimiumScreen"
+            android:exported="false" />
+        <activity android:name=".Screen.Upload_Profile_Picture" />
         <activity android:name=".Screen.HomeScreen" />
         <activity android:name=".Screen.LoginScrren.Login" />
         <activity android:name=".Screen.FormStep.FormStepTwo" />
@@ -36,7 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <service android:name="com.google.firebase.components.ComponentDiscoveryService">
             <meta-data

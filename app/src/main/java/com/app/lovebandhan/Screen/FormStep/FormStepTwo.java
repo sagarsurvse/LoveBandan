@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -126,6 +127,13 @@ public class FormStepTwo extends AppCompatActivity {
            if (s.length() > 9){
                DocumentReference documentReference2 = db.collection("Users").document(mobile_no.getText().toString());
                documentReference2.addSnapshotListener(FormStepTwo.this, new EventListener<DocumentSnapshot>() {
+                   public boolean isValidPhone(CharSequence phone) {
+                       if (TextUtils.isEmpty(phone)) {
+                           return false;
+                       } else {
+                           return android.util.Patterns.PHONE.matcher(phone).matches();
+                       }
+                   }
                    @Override
                    public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
                        if (documentSnapshot.exists()) {
