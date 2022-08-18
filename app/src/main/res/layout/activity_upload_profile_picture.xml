@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/app_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/arrowleft" />
+
+        <TextView
+            android:id="@+id/layoutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Upload Profile Picture"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:background="#1002C4FF"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <RelativeLayout
+            android:id="@+id/lauoutcamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1.4"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/icon_B"
+                android:layout_width="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:src="@drawable/newcamera" />
+
+            <TextView
+                android:id="@+id/plogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="click photo"
+                android:textSize="12dp"
+                android:layout_below="@+id/icon_B"
+                android:textColor="#5013102B"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="from camera"
+                android:textSize="12dp"
+                android:layout_below="@+id/plogin"
+                android:textColor="#13102B"
+                />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:background="#1013102B"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:layout_height="60dp">
+
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/lauoutgallary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1.4"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/icon_B1"
+                android:layout_width="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="50dp"
+                android:src="@drawable/newgallary" />
+
+            <TextView
+                android:id="@+id/plogin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="choose photo"
+                android:textSize="12dp"
+                android:layout_below="@+id/icon_B1"
+                android:textColor="#5013102B"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="from gallery"
+                android:textSize="12dp"
+                android:layout_below="@+id/plogin1"
+                android:textColor="#13102B"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb_load"
+        />
+
+
+
+
+</RelativeLayout>
