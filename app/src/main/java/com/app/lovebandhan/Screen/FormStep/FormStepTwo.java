@@ -4,23 +4,39 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.Toast;
 
 import com.app.lovebandhan.R;
+import com.app.lovebandhan.Screen.LoginScrren.Login;
+import com.app.lovebandhan.Screen.ShowAllCustomer;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
+import javax.annotation.Nullable;
+
 public class FormStepTwo extends AppCompatActivity {
     TextInputEditText mail,mobile_no,date_of_birth;
     Button Btn_Continue;
     final Calendar myCalendar= Calendar.getInstance();
+    FirebaseFirestore db;
+    Boolean IsAlready;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,31 +53,38 @@ public class FormStepTwo extends AppCompatActivity {
         mobile_no = findViewById(R.id.phone_no);
         date_of_birth = findViewById(R.id.birth_date);
 
-        Btn_Continue = findViewById(R.id.create_account);
+        FirebaseApp.initializeApp(this);
+        db = FirebaseFirestore.getInstance();
 
+        Btn_Continue = findViewById(R.id.create_account);
+        mobile_no.addTextChangedListener(textWatcher);
 
         Btn_Continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!mail.getText().toString().isEmpty() || !mobile_no.getText().toString().isEmpty() ){
-                    Intent pass = new Intent(getApplicationContext(),FormStepThree.class);
-                    pass.putExtra("fname",fname);
-                    pass.putExtra("lname",lname);
-                    pass.putExtra("profile",profile);
-                    pass.putExtra("religion",religin);
-                    pass.putExtra("gender",gender);
-                    pass.putExtra("community",community);
-                    pass.putExtra("gmail",mail.getText().toString());
-                    pass.putExtra("mobile_no",mobile_no.getText().toString());
-                    pass.putExtra("date_of_birth",date_of_birth.getText().toString());
-                    startActivity(pass);
-
+                if (IsAlready){
+                    mobile_no.setError("User Already Register");
                 }
                 else {
+                    if (!mail.getText().toString().isEmpty() || !mobile_no.getText().toString().isEmpty()) {
+                        Intent pass = new Intent(getApplicationContext(), FormStepThree.class);
+                        pass.putExtra("fname", fname);
+                        pass.putExtra("lname", lname);
+                        pass.putExtra("profile", profile);
+                        pass.putExtra("religion", religin);
+                        pass.putExtra("gender", gender);
+                        pass.putExtra("community", community);
+                        pass.putExtra("gmail", mail.getText().toString());
+                        pass.putExtra("mobile_no", mobile_no.getText().toString());
+                        pass.putExtra("date_of_birth", date_of_birth.getText().toString());
+                        startActivity(pass);
 
-                    mail.setError("please enter the mail");
-                    mobile_no.setError("please enter the mobile no");
+                    } else {
 
+                        mail.setError("please enter the mail");
+                        mobile_no.setError("please enter the mobile no");
+
+                    }
                 }
 
                  }
@@ -91,4 +114,34 @@ public class FormStepTwo extends AppCompatActivity {
         });
 
     }
+
+    private TextWatcher textWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+           if (s.length() > 9){
+               DocumentReference documentReference2 = db.collection("Users").document(mobile_no.getText().toString());
+               documentReference2.addSnapshotListener(FormStepTwo.this, new EventListener<DocumentSnapshot>() {
+                   @Override
+                   public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
+                       if (documentSnapshot.exists()) {
+                           IsAlready = true;
+                       }
+                       else {
+                           IsAlready = false;
+                       }
+                   }
+               });
+           }
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    };
 }

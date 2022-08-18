@@ -14,19 +14,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:node="replace">
-        <activity android:name=".Screen.HomeScreen"></activity>
-        <activity android:name=".Screen.LoginScrren.Login"/>
+        <activity android:name=".Screen.Upload_Profile_Picture"></activity>
+        <activity android:name=".Screen.HomeScreen" />
+        <activity android:name=".Screen.LoginScrren.Login" />
         <activity android:name=".Screen.FormStep.FormStepTwo" />
         <activity android:name=".Screen.FormStep.FormStepThree" />
         <activity android:name=".Screen.FormStep.FormStepFour" />
         <activity android:name=".Screen.VerifyScreen" />
-        <activity android:name=".Screen.ChatScreen.Main_Chat_Activity"/>
-        <activity android:name=".Screen.FormStep.FormStepOne"/>
-        <activity android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-            android:theme="@style/Base.Theme.AppCompat"/>
-        <activity android:name=".Screen.Followers"/>
-        <activity android:name=".Screen.Following"/>
-        <activity android:name=".Screen.ShowAllCustomer"/>
+        <activity android:name=".Screen.ChatScreen.Main_Chat_Activity" />
+        <activity android:name=".Screen.FormStep.FormStepOne" />
+        <activity
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".Screen.Followers" />
+        <activity android:name=".Screen.Following" />
+        <activity android:name=".Screen.ShowAllCustomer" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
         <service android:name="com.google.firebase.components.ComponentDiscoveryService">
             <meta-data
