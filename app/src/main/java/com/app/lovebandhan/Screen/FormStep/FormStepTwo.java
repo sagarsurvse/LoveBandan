@@ -37,7 +37,7 @@ public class FormStepTwo extends AppCompatActivity {
     Button Btn_Continue;
     final Calendar myCalendar= Calendar.getInstance();
     FirebaseFirestore db;
-    Boolean IsAlready;
+    Boolean IsAlready = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +61,7 @@ public class FormStepTwo extends AppCompatActivity {
         mobile_no.addTextChangedListener(textWatcher);
 
         Btn_Continue.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 if (IsAlready){
@@ -83,6 +84,7 @@ public class FormStepTwo extends AppCompatActivity {
                     } else {
 
                         mail.setError("please enter the mail");
+
                         mobile_no.setError("please enter the mobile no");
 
                     }
@@ -90,6 +92,10 @@ public class FormStepTwo extends AppCompatActivity {
 
                  }
         });
+
+
+
+
 
 
 
@@ -127,13 +133,9 @@ public class FormStepTwo extends AppCompatActivity {
            if (s.length() > 9){
                DocumentReference documentReference2 = db.collection("Users").document(mobile_no.getText().toString());
                documentReference2.addSnapshotListener(FormStepTwo.this, new EventListener<DocumentSnapshot>() {
-                   public boolean isValidPhone(CharSequence phone) {
-                       if (TextUtils.isEmpty(phone)) {
-                           return false;
-                       } else {
-                           return android.util.Patterns.PHONE.matcher(phone).matches();
-                       }
-                   }
+
+
+
                    @Override
                    public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
                        if (documentSnapshot.exists()) {

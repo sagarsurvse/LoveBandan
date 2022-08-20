@@ -15,8 +15,8 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:node="merge">
         <activity
-            android:name=".PrimiumScreen"
-            android:exported="false" />
+            android:name=".Screen.PrimiumScreen"/>
+
         <activity android:name=".Screen.Upload_Profile_Picture" />
         <activity android:name=".Screen.HomeScreen" />
         <activity android:name=".Screen.LoginScrren.Login" />
@@ -28,11 +28,13 @@
         <activity android:name=".Screen.FormStep.FormStepOne" />
         <activity
             android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-            android:theme="@style/Base.Theme.AppCompat" />
+            android:theme="@style/Base.Theme.AppCompat"
+            tools:replace="android:theme" />
         <activity android:name=".Screen.Followers" />
         <activity android:name=".Screen.Following" />
         <activity android:name=".Screen.ShowAllCustomer" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
