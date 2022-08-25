@@ -15,8 +15,12 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:node="merge">
         <activity
-            android:name=".Screen.PrimiumScreen"/>
-
+            android:name=".User_Profilepage"
+            android:exported="false" />
+        <activity
+            android:name=".User_detailspage"
+            android:exported="false" />
+        <activity android:name=".Screen.PrimiumScreen" />
         <activity android:name=".Screen.Upload_Profile_Picture" />
         <activity android:name=".Screen.HomeScreen" />
         <activity android:name=".Screen.LoginScrren.Login" />
@@ -34,7 +38,6 @@
         <activity android:name=".Screen.Following" />
         <activity android:name=".Screen.ShowAllCustomer" />
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

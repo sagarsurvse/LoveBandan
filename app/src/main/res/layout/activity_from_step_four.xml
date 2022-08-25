@@ -97,13 +97,12 @@
         android:id="@+id/education"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/step_status"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:layout_below="@+id/step_status"
-        android:text="Education &amp; caarrier details"
+        android:text="Education &amp; Carrier details"
         android:textSize="25dp"
-        android:textStyle="bold">
-    </TextView>
+        android:textStyle="bold"></TextView>
 
 
     <RelativeLayout
@@ -261,7 +260,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="45dp"
-        android:background="@drawable/btn_shape"
+        android:background="@drawable/button_shape"
         android:paddingRight="20dp"
         android:text="Continue"
         android:textAllCaps="false"

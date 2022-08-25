@@ -292,7 +292,7 @@
                         android:layout_height="40dp"
                         android:layout_marginLeft="60dp"
                         android:layout_marginTop="20dp"
-                        android:background="@drawable/btn_shape"
+                        android:background="@drawable/button_shape"
 
                         android:text="Continue"
                         android:textSize="15dp"
@@ -419,7 +419,7 @@
                         android:layout_height="40dp"
                         android:layout_marginLeft="60dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/btn_shape"
+                        android:background="@drawable/button_shape"
                         android:text="Continue"
                         android:textSize="15dp"
                         android:textStyle="bold" />
@@ -546,7 +546,7 @@
                         android:layout_height="40dp"
                         android:layout_marginLeft="60dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/btn_shape"
+                        android:background="@drawable/button_shape"
                         android:text="Continue"
                         android:textSize="15dp"
                         android:textStyle="bold" />
@@ -673,7 +673,7 @@
                         android:layout_height="40dp"
                         android:layout_marginLeft="60dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/btn_shape"
+                        android:background="@drawable/button_shape"
                         android:text="Continue"
                         android:textSize="15dp"
                         android:textStyle="bold" />
@@ -800,7 +800,7 @@
                         android:layout_height="40dp"
                         android:layout_marginLeft="60dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/btn_shape"
+                        android:background="@drawable/button_shape"
                         android:text="Continue"
                         android:textSize="15dp"
                         android:textStyle="bold" />
@@ -926,7 +926,7 @@
                         android:layout_height="40dp"
                         android:layout_marginLeft="60dp"
                         android:layout_marginTop="10dp"
-                        android:background="@drawable/btn_shape"
+                        android:background="@drawable/button_shape"
                         android:text="Continue"
                         android:textSize="15dp"
                         android:textStyle="bold" />

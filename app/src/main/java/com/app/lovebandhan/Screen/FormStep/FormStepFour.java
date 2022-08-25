@@ -26,7 +26,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FormStepFour extends AppCompatActivity {
+public class
+FormStepFour extends AppCompatActivity {
     private static final String TAG = "Fourth form";
     Spinner SpinSchool,SpinWork,SpinAs,SpinIncome;
     Button Btn_Continue;
@@ -80,21 +81,21 @@ public class FormStepFour extends AppCompatActivity {
 
         SpinSchool = findViewById(R.id.spinner_higher);
         SpinWork = findViewById(R.id.spinner_work);
-        SpinIncome = findViewById(R.id.spinner_as);
-        SpinAs = findViewById(R.id.spinner_income);
+        SpinAs = findViewById(R.id.spinner_as);
+        SpinIncome = findViewById(R.id.spinner_income);
 
 
-        // for profile
+        // for SCHOOL
         adapterSpinHigheSchool =    new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item,schoolArray);
         adapterSpinHigheSchool.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         SpinSchool.setAdapter(adapterSpinHigheSchool);
 
-        //for  gender
+        //for  WORK
         adapterSpinwork =    new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item,workarray);
         adapterSpinwork.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         SpinWork.setAdapter(adapterSpinwork);
 
-        //for  religion
+        //for
         adapterSpinAs =    new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item,AsArray);
         adapterSpinAs.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         SpinAs.setAdapter(adapterSpinAs);
