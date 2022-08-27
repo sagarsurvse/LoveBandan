@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen.User_detailspage">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/matches"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/salman"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ajay">
+
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/id_about"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/salman"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_shape">
+
+                <TextView
+                    android:id="@+id/id_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="About Ajay Ingale"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/id_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_text1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Glad you're here.in terms of education,l have acquired my bachelors in mca.At present,l am working as an Android devloper "
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/basic"
+                android:layout_width="match_parent"
+                android:layout_height="900dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/id_about"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/btn_shape">
+
+                <TextView
+                    android:id="@+id/Basic_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Basic Details"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/crated_btn"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/Basic_details"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_shape"
+                    android:text="Created By Self"
+                    android:textSize="10dp">
+
+                </Button>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/Basic_details"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/button_shape"
+                    android:text="Profile ID-SH60536565"
+                    android:textSize="10dp" />
+
+
+                <Button
+                    android:id="@+id/id_age"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/crated_btn"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_shape"
+                    android:text="22 yrs old"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/crated_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="140dp"
+                    android:background="@drawable/button_shape"
+                    android:text="Height-5'4"
+                    android:textSize="10dp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/birth_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_age">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/calen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:paddingBottom="30dp"
+                        android:textColor="@color/black"
+                        android:text="Birth Date" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:paddingTop="10dp"
+                        android:text="Born On**/**/****"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/material_stutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/birth_date">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/ic_baseline_person_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:paddingBottom="30dp"
+                        android:textColor="@color/black"
+                        android:text="Material Status" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:text="Never Married" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/live_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/material_stutus">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/ic_baseline_location_on_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:paddingBottom="30dp"
+                        android:textColor="@color/black"
+                        android:text="Live in" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:text="Lives in Mumbai,Maharastra,India" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/live_in">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/calen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:paddingBottom="30dp"
+                        android:textColor="@color/black"
+                        android:text="Religion &amp; Mother Tongue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:text="Hindu, Marathi" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/community"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/language">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/calen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:paddingBottom="30dp"
+                        android:textColor="@color/black"
+                        android:text="Community" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:text="96 Kuli Maratha" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/diet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/community">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/calen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_toRightOf="@+id/imageView6"
+                        android:paddingBottom="30dp"
+                        android:textColor="@color/black"
+                        android:text="Diet Preferences" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/imageView6"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:text="Occasionally Non-Vegetarian" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="300dp"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/diet"
+                    android:layout_marginRight="34dp"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#B2B5B2"></View>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/unlock_id"
+                    android:layout_below="@id/view1"
+                    android:text="To Unlock Birth date"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="center">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/unlock_id"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_shape"
+                    android:text="Go Premium Now"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/appbar"
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_baseline_check_24"
+            android:text="Like this Profile! Connect Now"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>
