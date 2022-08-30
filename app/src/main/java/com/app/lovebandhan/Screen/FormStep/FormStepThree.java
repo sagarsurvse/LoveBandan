@@ -1,6 +1,5 @@
 package com.app.lovebandhan.Screen.FormStep;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +10,6 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.app.lovebandhan.R;
-import com.google.android.material.textfield.TextInputEditText;
 
 public class FormStepThree extends AppCompatActivity {
     Spinner SpinLive,SpinCity,SpinMaterial,SpinDiet,SpinHeight,SpinSubCommunity;
@@ -26,13 +24,13 @@ public class FormStepThree extends AppCompatActivity {
     ArrayAdapter<CharSequence> adapterSpinCommunity;
 
 
-    String[] liveArray = {"Aadhra Pradesh","Bihar","dehli-NCR","Gujrat","Haryana","Jharkhand","Kaenataka","Kerala","Madhya Pradesh","Maharastra","Orissa","Punjab","Rajsthan",
+    String[] liveArray = {"Andhra Pradesh","Bihar","dehli-NCR","Gujrat","Haryana","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Orissa","Punjab","Rajasthan",
                           "Tamil Nadu","Uttar Pradesh","West Bengal","Sikkim","Uttaranchal","Tripura"};
     String[] select_cityArray ={"Ahmednagar","Akola","Amravati","Aurangabad","Beed","Bhandara","Buldhana","Chandrapur","Dhule","Gadchirli",
                                 "Gondiya","Hingoli","Jalgaon","Jalna","Kolhapur","Latur","Malegaon","Mumbai","Nagpur","Nanded","Nandurbar","Nashik",
                                 "Navi Mumbai","Oras","Osmanabad","Parbhani","Pune","Raigad","Ratnagiri","Sangli","Satara","Sewagram","Solapur","Thane",
                                  "Wardha","Washim","Yavatmal","Other"};
-    String[] meterialarray = {"Never Married", "Divorcrd","Windowed","Awaiting Divorce","Annulled"};
+    String[] meterialarray = {"Never Married", "divorced","Widowed","Awaiting Divorce","Annulled"};
     String[] dietArray = {"Veg", "Non-Veg","Occasionally Non-Veg","Eggetarian","Jain","Vegan"};
     String[] heightarray = {"4ft 5in-134cm", "4ft 6in-137","4ft 7in-139cm","4ft 8in-142cm","4ft 9in-144cm","4ft 10in-147cm","4ft 11in-149cm","5ft- 152cm","5ft 1in-154",
                              "5ft 2in-157cm","5ft 3in-160cm","5ft 4in -162cm","5ft 5in-165cm","5ft 6in-167cm","5ft 7in-170cm","5ft 8in-172cm","5ft 9in-175cm","5ft 10in-177cm",
